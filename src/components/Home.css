@@ -1,0 +1,80 @@
+/* Home.css */
+
+/* General setup */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Smoke particles in the background */
+.smoke-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Main content styling */
+.content {
+  position: relative;
+  z-index: 10;
+  padding: 0 20px;
+}
+
+/* Scrollable sections */
+section {
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  min-height: 100vh; /* Make each section take full viewport height */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Parallax backgrounds */
+section#home {
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent */
+}
+
+section#about {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent */
+}
+
+section#projects {
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent */
+}
+
+/* Text styling */
+h1, h2, p {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  padding: 0 15px;
+}
+
+/* Section text styling */
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* Section hover effect */
+section:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-out;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
